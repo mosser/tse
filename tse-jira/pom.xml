@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>tse-root</artifactId>
+        <groupId>eu.ace_design.teaching.tse</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+  <artifactId>tse-jira</artifactId>
+  <name>TSE :: JIRA Connector</name>
+  <description>Connection to Jira</description>
+  <inceptionYear>2013</inceptionYear>
+  
+  <repositories>
+         <repository>
+           <id>atlassian-public</id>
+           <url>https://m2proxy.atlassian.com/repository/public</url>
+         </repository>
+       </repositories>
+  
+  <dependencies>
+  <dependency>
+  <groupId>com.google.code.findbugs</groupId>
+  <artifactId>jsr305</artifactId>
+  <version>2.0.1</version>
+  </dependency>
+  
+    <dependency>
+        <groupId>com.atlassian.jira</groupId>
+        <artifactId>jira-rest-java-client</artifactId>
+        <version>1.1-m02</version>
+    </dependency>
+	<dependency>
+    <groupId>com.twitter</groupId>
+    <artifactId>util-logging_2.10</artifactId>
+    <version>6.3.0</version>
+</dependency>
+  </dependencies>
+  
+</project>
